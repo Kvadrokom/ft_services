@@ -16,10 +16,10 @@ FROM	alpine:3.12
 RUN 	apk update && \
     apk add openrc 
 
-ADD     https://dl.influxdata.com/telegraf/releases/telegraf-1.15.3_linux_amd64.tar.gz /etc/
+ADD     https://dl.influxdata.com/telegraf/releases/telegraf-1.19.1_linux_amd64.tar.gz /etc/
 
-RUN     tar -xzf /etc/telegraf-1.15.3_linux_amd64.tar.gz -C /etc/ ; rm -rf /etc/telegraf-1.15.3_linux_amd64.tar.gz && \
-    mv /etc/telegraf-1.15.3 /telegraf && \
+RUN     tar -xzf /etc/telegraf-1.19.1_linux_amd64.tar.gz -C /etc/ ; rm -rf /etc/telegraf-1.19.1_linux_amd64.tar.gz && \
+    mv /etc/telegraf-1.19.1 /telegraf && \
     cp -r telegraf/* / && rm -rf /telegraf
 
 RUN     wget -q -O /etc/apk/keys/sgerrand.rsa.pub https://alpine-pkgs.sgerrand.com/sgerrand.rsa.pub && \
