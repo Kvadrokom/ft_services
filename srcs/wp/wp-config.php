@@ -19,8 +19,8 @@
  */
 
 define( 'DB_HOST', 'mysql:3306');
-define( 'WP_HOME', 'http://192.168.99.222:5050/' );
-define( 'WP_SITEURL', 'http://192.168.99.222:5050/' );
+define( 'WP_HOME', 'http://192.168.99.150:5050/' );
+define( 'WP_SITEURL', 'http://192.168.99.150:5050/' );
 
 
 // ** MySQL settings - You can get this info from your web host ** //
